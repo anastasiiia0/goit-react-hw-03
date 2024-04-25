@@ -8,7 +8,7 @@ import ContactList from '../ContactList/ContactList.jsx';
 export default function App() {
   const [contacts, setContacts] = useState(() => {
     const savedContacts =
-      JSON.parse(window.localStorage.getItem('saved-contacts')) || {};
+      JSON.parse(window.localStorage.getItem('saved-contacts')) || [];
     return savedContacts;
   });
 
